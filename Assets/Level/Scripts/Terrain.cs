@@ -54,6 +54,8 @@ public class Terrain : MonoBehaviour {
 				g.transform.parent = this.transform;
 			}
 		}
+
+		this.transform.position = new Vector3(-width / 2 * hexWidth, 0, -height / 2 * rowHeight);
 	}
 
 	void OnGUI()
